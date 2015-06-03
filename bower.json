@@ -1,0 +1,16 @@
+{
+  "name": "odtraining",
+  "version": "0.0.0",
+  "authors": [
+    "John Battista <jbattista@expedia.com>"
+  ],
+  "description": "Oasis Digital Training",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
