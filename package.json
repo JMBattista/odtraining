@@ -1,0 +1,22 @@
+{
+  "name": "odtraining",
+  "version": "1.0.0",
+  "description": "Oasis Digital Training example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JMBattista/odtraining.git"
+  },
+  "author": "John Battista",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JMBattista/odtraining/issues"
+  },
+  "homepage": "https://github.com/JMBattista/odtraining",
+  "devDependencies": {
+    "bower": "^1.4.1"
+  }
+}
