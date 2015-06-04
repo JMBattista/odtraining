@@ -8,7 +8,7 @@
 					templateUrl: 'templates/menu.html'
 				})
 				.when('/controllers', {
-					templateUrl: 'templates/controllers.html'
+					templateUrl: 'app/controllerExamples/controllers.html'
 				})
 				.when('/error', {
 					templateUrl: 'templates/error.html'

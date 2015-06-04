@@ -1,0 +1,17 @@
+<h3>Controller Examples</h3>
+
+<div style="border: 3px solid red; padding 5px;"
+	ng-controller="FirstController as outer">
+    <p><input ng-model="outer.person.firstname"></input></p>
+	<p>Hello, {{outer.person.firstname}}</p>
+
+	<hr>
+
+	<div style="border: 3px solid green; padding: 5px;" 
+		ng-controller="SecondController as inner">
+	    <p><input ng-model="outer.person.firstname"></input></p>
+		<p>Hello, {{outer.person.firstname}}</p>
+	</div>
+
+</div>
+
