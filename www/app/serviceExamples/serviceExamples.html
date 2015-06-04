@@ -2,11 +2,12 @@
 	<h3>Services</h3>
 
 	<p>{{vm.API_ROOT}}</p>
-
+	<p>Original: {{vm.original}}</p>
+	<p>After: {{vm.after}}</p>
 	<div>
 	0: <input ng-model="vm.sharedValue.widgetCount">
 	</div>
-	
+
 	<div ng-controller="Controller1 as vm">
 	1: <input ng-model="vm.sharedValue.widgetCount">
 	</div>
