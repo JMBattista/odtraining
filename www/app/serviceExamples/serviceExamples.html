@@ -2,4 +2,16 @@
 	<h3>Services</h3>
 
 	<p>{{vm.API_ROOT}}</p>
+
+	<div>
+	0: <input ng-model="vm.sharedValue.widgetCount">
+	</div>
+	
+	<div ng-controller="Controller1 as vm">
+	1: <input ng-model="vm.sharedValue.widgetCount">
+	</div>
+
+	<div ng-controller="Controller2 as vm">
+	2: <input ng-model="vm.sharedValue.widgetCount">
+	</div>
 </div>
