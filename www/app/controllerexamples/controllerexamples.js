@@ -1,19 +1,18 @@
-;(function() {
-	'use strict';
+;(function () {
 
-	angular.module('controllerExamples', [])
+  'use strict';
 
-		.controller('FirstController', function() {
-			var vm = this;
+  angular.module('controllerExamples', [])
 
-			function doThing() {
-				vm.person = {firstname : "Lucia"};
-			}
+    .controller('FirstController', function () {
+      var vm = this;
 
-			doThing();
-		})
+      vm.person = {};
+    })
 
-		.controller('SecondController', function() {
-		})
-	;
+    .controller('SecondController', function () {
+
+    })
+  ;
+
 })();

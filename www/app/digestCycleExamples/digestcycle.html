@@ -1,0 +1,40 @@
+<h3>Digest Cycle Examples</h3>
+
+<div class="row">
+	<div class="col-md-1"></div>
+
+	<div class="col-md-2">
+		<h4>Person</h4>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-1"></div>
+
+	<div class="col-md-2">
+		<p>Firstname:</p>
+		<p>Lastname:</p>
+		<p>Zipcode:</p>
+	</div>
+
+	<div class="col-md-8">
+		<p><input ng-model="dce.person.firstname" /></p>
+		<p><input ng-model="dce.person.lastname" /></p>
+		<p><input ng-model="dce.person.zipcode" /></p>
+	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="col-md-1"></div>
+
+	<div class="col-md-2">
+		<p>Firstname:</p>
+		<p>Lastname:</p>
+		<p>Zipcode:</p>
+	</div>
+
+	<div class="col-md-8">
+		<p>{{dce.person.firstname}}</p>
+		<p>{{dce.person.lastname}}</p>
+		<p class="alert" ng-class="{'alert-success':dce.valid, 'alert-danger':!dce.valid}">{{dce.person.zipcode}}</p>
+	</div>
+</div>
