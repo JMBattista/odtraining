@@ -16,8 +16,13 @@
 				};			
 			}
 		})
+		.factory('beHappy', function($log) {
+			return function() {
+				$log.log("Be Happy!");
+			}
+		})
 		.controller('ServicesController', function($scope, API_ROOT, sharedValue, 
-				stringUtilsService, stringUtilsFactory) {
+				stringUtilsService, stringUtilsFactory, beHappy) {
 
 			var vm = this;
 
@@ -26,6 +31,8 @@
 
 			vm.original = 'everything';
 			vm.after = stringUtilsService.makeAwesome(vm.original);
+
+			beHappy();
 
 		})
 		.controller('Controller1', function(sharedValue) {
