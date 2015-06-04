@@ -1,6 +1,13 @@
-<html ng-app>
-    <script src="bower_components/angular/angular.js" ></script>
-    <body>
-      <p>Hello, {{'world'}}</p>
-    </body>
+<html ng-app="demoApp">
+<head>
+	<script src="bower_components/angular/angular.js"></script>
+  	<script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app/controllerexamples/controllerexamples.js"></script>
+    <script src="app/app.js"></script>
+</head>
+<body>
+  	<h1><a href="#/menu">Home</a></h1>
+
+  	<div ng-view></div>
+</body>
 </html>
