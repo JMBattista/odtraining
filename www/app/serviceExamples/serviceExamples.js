@@ -2,10 +2,11 @@
 	'use strict';
 
 	angular.module('serviceExamples', [])
-		.controller('ServicesController', function($scope) {
+		.constant('API_ROOT', 'http://example.com')
+		.controller('ServicesController', function($scope, API_ROOT) {
 			var vm = this;
 
-			vm.foo = "FOO!";
+			vm.API_ROOT = API_ROOT;
 		})
 	;
 })();

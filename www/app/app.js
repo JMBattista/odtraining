@@ -2,7 +2,7 @@
 	'use strict';
 
 	angular.module('demoApp', ['ngRoute', 'controllerExamples', 'digestCycleExamples', 'serviceExamples'])
-		.config(function ($routeProvider) {
+		.config(function ($routeProvider, API_ROOT) {
 			$routeProvider
 				.when('/menu', {
 					templateUrl: 'templates/menu.html'

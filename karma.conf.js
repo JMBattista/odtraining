@@ -26,6 +26,8 @@ module.exports = function(config) {
       // Our application
       'www/app/app.js',
       'www/app/controllerExamples/controllerExamples.js',
+      'www/app/digestCycleExamples/digestCycleExamples.js',
+      'www/app/serviceExamples/serviceExamples.js',
 
       // Our tests
       'tests/unit/tests.js'
