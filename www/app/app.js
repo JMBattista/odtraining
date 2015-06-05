@@ -2,7 +2,7 @@
 	'use strict';
 
 	angular.module('demoApp', ['ngRoute', 'controllerExamples', 'digestCycleExamples', 'serviceExamples', 
-		'promiseExamples'])
+		'promiseExamples', 'directiveExamples'])
 		.config(function ($routeProvider, API_ROOT) {
 			$routeProvider
 				.when('/menu', {
@@ -24,6 +24,11 @@
 				.when('/promises', {
 					templateUrl: 'app/promiseExamples/promiseExamples.html',
 					controller: 'PromisesController',
+					controllerAs: 'vm'
+				})
+				.when('/directives', {
+					templateUrl: 'app/directiveExamples/directiveExamples.html',
+					controller: 'DirectiveExampleController',
 					controllerAs: 'vm'
 				})
 				.when('/error', {

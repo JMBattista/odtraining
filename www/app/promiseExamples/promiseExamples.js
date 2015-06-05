@@ -75,6 +75,11 @@
 					$log.log("any failed and should have");
 				})
 
+
+			var d = $q.defer();
+
+			$log.log("Result of notify", d.notify("foo"));
+
 		});
 
 
