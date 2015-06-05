@@ -1,7 +1,8 @@
 ;(function () {
 	'use strict';
 
-	angular.module('demoApp', ['ngRoute', 'controllerExamples', 'digestCycleExamples', 'serviceExamples'])
+	angular.module('demoApp', ['ngRoute', 'controllerExamples', 'digestCycleExamples', 'serviceExamples', 
+		'promiseExamples'])
 		.config(function ($routeProvider, API_ROOT) {
 			$routeProvider
 				.when('/menu', {
@@ -18,6 +19,11 @@
 				.when('/services', {
 					templateUrl: 'app/serviceExamples/serviceExamples.html',
 					controller: 'ServicesController',
+					controllerAs: 'vm'
+				})
+				.when('/promises', {
+					templateUrl: 'app/promiseExamples/promiseExamples.html',
+					controller: 'PromisesController',
 					controllerAs: 'vm'
 				})
 				.when('/error', {

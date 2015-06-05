@@ -46,5 +46,29 @@
 			vm.sharedValue = sharedValue;
 		})
 
+		.factory('customerManager', function($http, $log) {
+			return {
+				getCustomers: function() {
+					return $http.get("pretend-api/customers.json")
+						.then(function(response) {
+							$log.log("Response!", response);
+							return response.data;
+						});
+				}
+			}
+		})
+		.controller('CustomerController', function($scope, $log, customerManager) {
+			var vm = this;
+
+			customerManager.getCustomers()
+				.then(function(data) {
+					$log.log("Got data!")
+					vm.customers = data;
+				})
+				.catch(function(error) {
+					$log.log(error);
+				});
+		})
+
 	;
 })();

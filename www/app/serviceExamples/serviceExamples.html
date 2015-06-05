@@ -1,6 +1,12 @@
 <div class="container">
 	<h3>Services</h3>
 
+	<div ng-controller="CustomerController as vm">
+		<pre>{{vm.customers | json}}</pre>
+	</div>
+
+	<hr>
+
 	<p>{{vm.API_ROOT}}</p>
 	<p>Original: {{vm.original}}</p>
 	<p>After: {{vm.after}}</p>
